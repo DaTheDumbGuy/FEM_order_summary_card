@@ -1,0 +1,120 @@
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-size:16px;
+    background:hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+}
+main{
+    display:grid;
+    place-items:center;
+    height:100vh;
+}
+.order_summary{
+    max-width:380px;
+    width:90%;
+    background:hsl(0, 0%, 100%);
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.order_summary header .order_summary_img_container {
+    display:inline-block;
+    width:100%;
+}
+.order_summary header .order_summary_img_container img{ 
+    display:block;
+    width:100%;
+    height:auto;
+}
+.order_summary_body{
+    padding:30px;
+    text-align: center;
+}
+.order_summary_body .order_summary_title{
+    margin-bottom:15px;
+    font-weight:900;
+    /* font-size:1.5em; */
+}
+.order_summary_body .order_summary_details{
+    padding: 0 10px;
+    text-align: center;
+    color:hsl(224, 23%, 55%);
+    margin-bottom:20px;
+}
+/* form{
+    background:lightblue;
+} */
+.order_summary_body .order_summary_annual_plan{
+    background:hsl(225, 100%, 98%);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+    border-radius:10px;
+    font-size:0.9em;
+    margin-bottom:20px;
+}
+.order_summary_annual_plan .order_summary_price_plan{
+    display:flex;
+    align-items: center;
+    gap:15px;
+} 
+.order_summary_annual_plan .order_summary_price_plan img{
+    height:40px;
+    width:auto;
+} 
+.order_summary_annual_plan .order_summary_price_plan .price_plan p:first-child{
+    padding-left:8px;
+    font-weight:700;
+} 
+.order_summary_annual_plan .order_summary_price_plan .price_plan p:last-child{
+    font-weight:450;
+    color:hsl(224, 23%, 55%);
+    font-size:0.9em;
+} 
+.order_summary_body form button[type=submit]{
+    display:block;
+    width:100%;
+    padding:1rem;
+    border-radius:10px;
+    border:none;
+    background:hsl(245, 75%, 52%);
+    color:hsl(0, 0%, 100%);
+    font-weight:700;
+    font-size:1em;
+    margin-bottom:20px;
+    box-shadow: 5px 15px 8px hsl(225, 100%, 94%);
+}
+.order_summary_body form button[type=submit]:hover{
+    background:hsl(245, 75%, 67%);
+
+}
+.order_summary_body form .cancel_order{
+    color:hsl(224, 23%, 55%);
+    font-weight:700;
+    font-size:0.8em;
+    text-decoration: none;
+}
+.order_summary_body form .cancel_order:hover{
+    color:hsl(223, 47%, 23%);
+}
+.order_summary_body form .change{
+    color:hsl(245, 75%, 52%);
+    font-weight:900;
+    font-size:0.9em;
+}
+.order_summary_body form .change:hover{
+    color:hsl(245, 75%, 67%);
+    text-decoration: none;
+}
+@media (min-width:768px) {
+    body{
+        background-repeat: no-repeat;
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-size:contain;
+    }
+}
